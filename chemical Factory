@@ -1,0 +1,25 @@
+""" What does this program do ?
+"""
+
+def do_action(present, redmark, bluemark):
+    if(present > redmark):
+        print("Close the Valve")
+        
+    elif(present < bluemark):
+            print("Buy more liquid")
+
+    else:
+        print("tank is fine:")
+
+def get_current_level():
+    ethanol=int(input("Eneter the current value of ethanol:"))
+    return ethanol
+
+# Main starts from here
+capacity = 900
+high=80/100*capacity
+print("the high number is:",high)
+low = 20/100*capacity
+print("the low number is:",low)
+level = get_current_level()
+do_action(level, high, low)
