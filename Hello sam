@@ -1,0 +1,8 @@
+def say_name():
+    
+    name1=input("Enter the user name\n")
+    print("Hello",name1)
+
+
+
+say_name()
