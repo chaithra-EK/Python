@@ -1,0 +1,31 @@
+
+def total_grade(eng,science,maths,total):
+    total1=eng+science+maths
+    percentage=(total1/total)*100
+    print("the percentage is:",percentage)
+    if(percentage>=90):
+        print("the student scored first class rank")
+    elif(percentage>=75):
+        print("the student scored second class rank:")
+
+    elif(percentage>=35):
+        print("the student scored the average marks:")
+    else:
+        print("the student has failed:")
+
+
+def marks_scored():
+    eng=int(input("Enter the marks scored in english:"))
+    science=int(input("Enter the marks scored in science:"))
+    Maths=int(input("Enter the marks scored in mathematics:"))
+    return eng,science,Maths          
+
+
+
+
+eng,science,maths= marks_scored()
+eng1=80
+maths1=100
+science1=90
+total=eng1+maths1+science1
+total_grade(eng,science,maths,total)
