@@ -1,0 +1,27 @@
+mc=input("enter the sentence:")
+char1=mc[-1:]
+print(char1)
+
+char2=mc[-5:]
+print(char2)
+
+char3=mc[1]
+print(char3)
+
+char4=mc[4]
+print(char4)
+
+
+if len(mc)%2 == 0:
+    y=(mc[len(mc) //2 - 2])
+    x=(mc[len(mc) // 2 - 1] + mc[len(mc)//2])
+    z=(mc[len(mc)// 2 + 1])
+    middle_string=y + x + z
+    print(middle_string)
+else:
+    x=(mc[len(mc) // 2 - 1])
+    y=(mc[len(mc)//2])
+    Z=(mc[len(mc)// 2 + 1])
+    middle_string1=x+y+Z
+    print(middle_string1)
+
