@@ -1,0 +1,8 @@
+num=int(input("Enter a number\n"))
+iter=0
+num2=num-1
+while iter < num:
+    string=((str(iter))*num2)
+    print(string)
+    iter+=1
+
