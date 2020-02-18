@@ -1,0 +1,6 @@
+text=input("Enter the text:")
+word=input("Enter the word to be searched:")
+position=int(input("enter the position to be replaced:"))
+print(text.find("word"))
+replace=input("Enter the text:")
+print(text.replace(word,replace,position))
