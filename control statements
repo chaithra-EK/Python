@@ -1,0 +1,17 @@
+#using for loop
+
+
+num=int(input("enter the number:\n"))
+for i in range(1,11):
+    print(num,"x",i,"=",num * i)
+
+
+
+#using while loop
+
+num=int(input("enter the number:\n"))
+iter=1
+
+while iter < 11:
+    print(num,"X",i,"=",iter*num)
+    iter+=1
