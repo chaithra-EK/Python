@@ -1,0 +1,18 @@
+word=1
+char=0
+
+while True:
+    inputs=input("Enter a sentence:")
+    if inputs!=" ":
+        for i in inputs:
+            if(i=='a'):
+                char=char+1
+            if(i==' '):
+                word=word+1
+            
+    else:
+        break
+        
+print(word)
+print(char)
+           
