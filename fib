@@ -1,0 +1,16 @@
+a=0
+b=1
+c=0
+n=int(input("Enter the number:"))
+if(n==a or n==b):
+    print("fib")
+    c=a+b
+while(c<n):
+    a=b
+    b=c
+    c=a+b
+if(c==n):
+    print("fib")
+
+else:
+    print(b)
