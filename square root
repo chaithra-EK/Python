@@ -1,0 +1,12 @@
+lst=[]
+while True:
+    num=int(input("Enter a three digit number:"))
+    lst.append(num)
+    if num==0:
+        break
+
+
+for i in lst:
+    if(i>99)and(i<1000):
+        num=i**0.5
+        print(num)
