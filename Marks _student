@@ -1,0 +1,42 @@
+
+def total_grade(eng,sciencetheory,sciencepractical,maths):
+    total1=eng+sciencetheory+sciencepractical+maths
+    science=sciencetheory+sciencepractical
+    percentage=(total1/total)*100
+    if(percentage>=90):
+        print("Grade A")
+    elif(percentage>=75)and(percentage<90):
+        print("Grade B")
+    elif(eng<25)or(sciencetheory<25)or(sciencepractical<8)or(maths<35)or(science<35):
+        print("Fail")
+        
+    else:
+        print("average")
+
+
+
+
+
+
+
+def marks_scored():
+    eng=int(input("Enter the marks in english:"))
+    sciencetheory=int(input("enter the marks scored in science theory:"))
+    sciencepractical=int(input("enter the marks scored in science practical:"))
+    maths=int(input("Enter the marks scored in maths:"))
+    return eng,sciencetheory,sciencepractical,maths
+
+
+
+eng,sciencetheory,sciencepractical,maths=marks_scored()
+eng1=75
+sci1=75
+sciprac=25
+scitotal=100
+math2=100
+total=eng1+scitotal+math2
+
+total_grade(eng,sciencetheory,sciencepractical,maths)
+
+
+                    
