@@ -1,0 +1,30 @@
+loginnum=12
+count=1
+end=0
+while count<=4:
+    num=int(input("Enter the number between 1 to 25 to login:"))
+    if num <(loginnum-2):
+        print("Invalid Passcode:")
+        count+=1
+    elif num >(loginnum+2):
+        print("Invalid Passcode:")
+        count+=1
+    elif num==loginnum:
+        print("WELCOME:")
+        count+=1
+
+    elif num <=(loginnum-2)or num >=(loginnum+2)or num <=(loginnum-1)or num >=(loginnum+1):
+        print("Invalid Passcode:")
+        count+=1
+        num=int(input("enter the number between 1 to 24:"))
+        if num <(loginnum-2)or num >(loginnum+2)or num <=(loginnum-2)or num >=(loginnum+2)or num <=(loginnum-1)or num >=(loginnum+1):
+            print("Invalid Passcode:")
+        elif num==loginnum:
+            print("WELCOME:")
+            count+=1
+            break
+
+if(num==12):
+    print("WELCOME")
+else:
+    print("LOGIN FAILED:")
